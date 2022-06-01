@@ -25,43 +25,6 @@ import java.util.stream.Collectors;
 // 5. In future, will need to check if the artist said this or if it was another artist.
 public class Fun {
     public static void main(String[] args) throws IOException {
-        overallAnalysis("https://genius.com/Chief-keef-hate-bein-sober-lyrics");
-        overallAnalysis("https://genius.com/50-cent-candy-shop-lyrics");
-        overallAnalysis("https://genius.com/50-cent-many-men-wish-death-lyrics");
-        overallAnalysis("https://genius.com/Eminem-lose-yourself-lyrics");
-        overallAnalysis("https://genius.com/Eminem-lucky-you-lyrics");
-        overallAnalysis("https://genius.com/Eminem-without-me-lyrics");
-        overallAnalysis("https://genius.com/Joyner-lucas-devils-work-lyrics");
-        overallAnalysis("https://genius.com/G-eazy-no-limit-lyrics");
-        overallAnalysis("https://genius.com/Cardi-b-be-careful-lyrics");
-        overallAnalysis("https://genius.com/Rihanna-work-lyrics");
-        overallAnalysis("https://genius.com/J-cole-deja-vu-lyrics");
-        overallAnalysis("https://genius.com/Chris-brown-no-guidance-lyrics");
-        overallAnalysis("https://genius.com/A-boogie-wit-da-hoodie-look-back-at-it-lyrics");
-        overallAnalysis("https://genius.com/Drake-draft-day-lyrics");
-        overallAnalysis("https://genius.com/Nicki-minaj-high-school-lyrics");
-        overallAnalysis("https://genius.com/Montana-of-300-chiraq-remix-lyrics");
-        overallAnalysis("https://genius.com/Jack-harlow-tyler-herro-lyrics");
-        overallAnalysis("https://genius.com/A-ap-rocky-fukk-sleep-lyrics");
-        overallAnalysis("https://genius.com/Nicki-minaj-regret-in-your-tears-lyrics");
-        overallAnalysis("https://genius.com/Russ-best-on-earth-lyrics");
-        overallAnalysis("https://genius.com/Kanye-west-ok-ok-pt-2-lyrics");
-        overallAnalysis("https://genius.com/Juice-wrld-maze-lyrics");
-        overallAnalysis("https://genius.com/Lil-durk-like-me-lyrics");
-        overallAnalysis("https://genius.com/Lil-wayne-megaman-lyrics");
-        overallAnalysis("https://genius.com/Tyga-im-gone-lyrics");
-        overallAnalysis("https://genius.com/Partynextdoor-only-u-lyrics");
-        overallAnalysis("https://genius.com/21-savage-out-for-the-night-pt-2-lyrics");
-        overallAnalysis("https://genius.com/Nicki-minaj-freedom-lyrics");
-        overallAnalysis("https://genius.com/Big-sean-win-some-lose-some-lyrics");
-        overallAnalysis("https://genius.com/Meek-mill-tony-story-pt-2-lyrics");
-        overallAnalysis("https://genius.com/G-eazy-pray-for-me-lyrics");
-        overallAnalysis("https://genius.com/Meek-mill-maybach-curtains-lyrics");
-        overallAnalysis("https://genius.com/Dj-khaled-no-new-friends-lyrics");
-        overallAnalysis("https://genius.com/Chris-brown-and-tyga-remember-me-lyrics");
-        overallAnalysis("https://genius.com/Lloyd-banks-where-im-at-lyrics");
-        overallAnalysis("https://genius.com/John-legend-all-of-me-lyrics");
-        overallAnalysis("https://genius.com/Ace-hood-bugatti-lyrics");
     }
 
     public static void artistWordSum(String path) throws IOException { // Input ex: "Collection/Drake"
