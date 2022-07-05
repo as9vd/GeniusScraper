@@ -1,3 +1,5 @@
+import SpringStuff.ArtistDataAccessObject;
+import SpringStuff.ArtistService;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.DomNode;
@@ -13,6 +15,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -23,8 +26,13 @@ import java.util.stream.Collectors;
 // Solve the problems:
 // 3. Dealing with missing lyric pages on Genius.
 // 5. In future, will need to check if the artist said this or if it was another artist.
-public class Fun {
+
+@ComponentScan("src/SpringStuff")
+public class Scraper {
+    public ArtistService artistService;
+
     public static void main(String[] args) throws IOException {
+        this.artistService = new ArtistService(new ArtistDataAccessObject());
     }
 
     public static void artistWordSum(String path) throws IOException { // Input ex: "Collection/Drake"
